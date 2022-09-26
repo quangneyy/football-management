@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLySanBong
 {
-    partial class Form1
+    partial class FormDangNhap
     {
         /// <summary>
         /// Required designer variable.
