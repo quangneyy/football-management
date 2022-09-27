@@ -34,6 +34,9 @@ namespace QuanLySanBong
                 if (data.Read() == true)
                 {
                     MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG");
+                    FormMenu f = new FormMenu();
+                    f.Show();
+                    this.Hide();
                 } else
                 {
                     MessageBox.Show("ĐĂNG NHẬP THẤT BẠI");
@@ -48,6 +51,11 @@ namespace QuanLySanBong
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FormDangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

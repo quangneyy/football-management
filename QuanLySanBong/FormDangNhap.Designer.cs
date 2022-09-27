@@ -100,6 +100,7 @@ namespace QuanLySanBong
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Cross;
             this.label3.Location = new System.Drawing.Point(349, 33);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -107,7 +108,7 @@ namespace QuanLySanBong
             this.label3.TabIndex = 6;
             this.label3.Text = "Đăng Nhập Tài Khoản Quản Lý Sân Bóng";
             // 
-            // Form1
+            // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,8 +122,9 @@ namespace QuanLySanBong
             this.Controls.Add(this.btnDangNhap);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "FormDangNhap";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
