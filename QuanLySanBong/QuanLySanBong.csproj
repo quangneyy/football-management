@@ -104,5 +104,41 @@
   <ItemGroup>
     <None Include="Resources\person.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dothethao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanbong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoadon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dichvu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bongda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bongda-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khungthanh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
