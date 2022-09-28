@@ -135,9 +135,6 @@
     <None Include="Resources\bongda.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bongda-3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\khungthanh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
