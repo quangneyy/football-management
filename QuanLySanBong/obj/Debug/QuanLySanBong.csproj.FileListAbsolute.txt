@@ -34,3 +34,6 @@ C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.Properties.Resources.resources
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.FormQLdichvu.resources
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CopyComplete
