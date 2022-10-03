@@ -53,5 +53,12 @@ namespace QuanLySanBong
         {
 
         }
+
+        private void btnQLSan_Click(object sender, EventArgs e)
+        {
+            Form1QLSancs fqls = new Form1QLSancs();
+            fqls.Show();
+            this.Hide();
+        }
     }
 }

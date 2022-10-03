@@ -52,7 +52,7 @@ namespace QuanLySanBong
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.Gray;
             this.btnDangNhap.Location = new System.Drawing.Point(732, 432);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(203, 59);
             this.btnDangNhap.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace QuanLySanBong
             this.label1.Location = new System.Drawing.Point(417, 166);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên Tài Khoản";
             // 
@@ -78,24 +78,24 @@ namespace QuanLySanBong
             this.label2.Location = new System.Drawing.Point(463, 291);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 25);
+            this.label2.Size = new System.Drawing.Size(80, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mật Khẩu";
             // 
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Location = new System.Drawing.Point(617, 166);
-            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(337, 30);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(337, 26);
             this.txtTaiKhoan.TabIndex = 3;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(617, 286);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(337, 30);
+            this.txtMatKhau.Size = new System.Drawing.Size(337, 26);
             this.txtMatKhau.TabIndex = 4;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -103,7 +103,7 @@ namespace QuanLySanBong
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Gray;
             this.btnThoat.Location = new System.Drawing.Point(468, 432);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(203, 59);
             this.btnThoat.TabIndex = 5;
@@ -121,7 +121,7 @@ namespace QuanLySanBong
             this.label3.Location = new System.Drawing.Point(463, 64);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(455, 29);
+            this.label3.Size = new System.Drawing.Size(379, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Đăng Nhập Tài Khoản Quản Lý Sân Bóng";
             // 
@@ -178,7 +178,8 @@ namespace QuanLySanBong
             // 
             // FormDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AcceptButton = this.btnDangNhap;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1067, 562);
@@ -195,7 +196,7 @@ namespace QuanLySanBong
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDangNhap);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDangNhap";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);

@@ -33,7 +33,7 @@ namespace QuanLySanBong
                 SqlDataReader data = cmd.ExecuteReader();
                 if (data.Read() == true)
                 {
-                    MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG");
+                    //MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG");
                     FormMenu f = new FormMenu();
                     f.Show();
                     this.Hide();

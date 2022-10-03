@@ -187,6 +187,7 @@ namespace QuanLySanBong
             this.btnQLSan.TabIndex = 31;
             this.btnQLSan.Text = "Quản Lý Sân";
             this.btnQLSan.UseVisualStyleBackColor = true;
+            this.btnQLSan.Click += new System.EventHandler(this.btnQLSan_Click);
             // 
             // pictureBox4
             // 
@@ -298,7 +299,7 @@ namespace QuanLySanBong
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(965, 543);
+            this.ClientSize = new System.Drawing.Size(1029, 572);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.btnQLNV);
             this.Controls.Add(this.pictureBox8);

@@ -37,3 +37,4 @@ C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.Form
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\System.Data.SqlClient.xml
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.Form1QLSancs.resources
