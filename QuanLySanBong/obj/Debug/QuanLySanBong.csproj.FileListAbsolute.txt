@@ -21,3 +21,9 @@ C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CoreCompileInputs.cache
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.exe
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.AssemblyReference.cache
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.FormDangNhap.resources
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.FormMenu.resources
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.GenerateResource.cache
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.exe
+D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.pdb

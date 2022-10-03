@@ -258,6 +258,7 @@ namespace QuanLySanBong
             this.btnDatSan.TabIndex = 23;
             this.btnDatSan.Text = "Đặt Sân";
             this.btnDatSan.UseVisualStyleBackColor = true;
+            this.btnDatSan.Click += new System.EventHandler(this.btnDatSan_Click);
             // 
             // btnThoat
             // 
@@ -269,7 +270,6 @@ namespace QuanLySanBong
             this.btnThoat.TabIndex = 22;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // FormMenu
             // 

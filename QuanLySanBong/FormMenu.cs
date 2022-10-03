@@ -23,17 +23,12 @@ namespace QuanLySanBong
             new FormDangNhap().Show();
         }
 
-        private void btnDatSan_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnQLKH_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnThoat_Click_1(object sender, EventArgs e)
+        private void btnDatSan_Click(object sender, EventArgs e)
         {
 
         }
