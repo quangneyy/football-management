@@ -32,5 +32,10 @@ namespace QuanLySanBong
         {
 
         }
+
+        private void btnQLKH_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

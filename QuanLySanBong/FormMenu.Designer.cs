@@ -153,6 +153,7 @@ namespace QuanLySanBong
             this.btnQLKH.TabIndex = 33;
             this.btnQLKH.Text = "Quản Lý Khách Hàng";
             this.btnQLKH.UseVisualStyleBackColor = true;
+            this.btnQLKH.Click += new System.EventHandler(this.btnQLKH_Click_1);
             // 
             // pictureBox5
             // 
