@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="Resources\khungthanh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
