@@ -22,7 +22,7 @@ namespace QuanLySanBong
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J16KJ8A\SQLEXPRESS;Initial Catalog=QLSanBanh;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8FJ7VHUC\SQLEXPRESS;Initial Catalog=QLSanBanh;Integrated Security=True");
             try
             {
                 con.Open();
@@ -34,7 +34,7 @@ namespace QuanLySanBong
                 if (data.Read() == true)
                 {
                     MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG");
-                    FormMenu f = new FormMenu();
+                    fTableManager f= new fTableManager();
                     f.Show();
                     this.Hide();
                 } else

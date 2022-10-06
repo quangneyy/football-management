@@ -27,3 +27,16 @@ D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.FormMenu.resources
 D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.GenerateResource.cache
 D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.exe
 D:\DOAN\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMenu.resources
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.FormDangNhap.resources
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fTableManager.resources
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.exe
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe.config
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe
+C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
