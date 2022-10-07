@@ -22,7 +22,7 @@ namespace QuanLySanBong
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8FJ7VHUC\SQLEXPRESS;Initial Catalog=QLSanBanh;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J16KJ8A\SQLEXPRESS;Initial Catalog=QLSanBanh;Integrated Security=True");
             try
             {
                 con.Open();
@@ -33,7 +33,6 @@ namespace QuanLySanBong
                 SqlDataReader data = cmd.ExecuteReader();
                 if (data.Read() == true)
                 {
-                    MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG");
                     fTableManager f= new fTableManager();
                     f.Show();
                     this.Hide();
@@ -61,6 +60,14 @@ namespace QuanLySanBong
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thật sự muốn xóa chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -8,7 +8,6 @@ C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.c
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.exe
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.FormDangNhap.resources
-C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.FormMenu.resources
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe.config
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe
 C:\Users\acer\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
@@ -40,3 +39,5 @@ C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.cspr
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe.config
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMenu.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fTableManager.resources
