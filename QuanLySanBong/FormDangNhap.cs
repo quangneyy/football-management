@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using QuanLySanBong.DAO;
 
 namespace QuanLySanBong
 {
@@ -22,10 +23,24 @@ namespace QuanLySanBong
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string userName = txtTaiKhoan.Text;
+            string passWord = txtMatKhau.Text;
+            if (Login(userName, passWord))
+            {
+                fTableManager f = new fTableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            } 
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
+        }
+
+        bool Login (string userName, string passWord)
+        {
+            return AccountDAO.Instance.Login(userName, passWord);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
