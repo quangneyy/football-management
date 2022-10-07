@@ -35,18 +35,18 @@ namespace QuanLySanBong
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlSan = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lsvHoaDon = new System.Windows.Forms.ListView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cbSan = new System.Windows.Forms.ComboBox();
-            this.cbDichVu = new System.Windows.Forms.ComboBox();
-            this.btnThemSan = new System.Windows.Forms.Button();
-            this.nmSoSan = new System.Windows.Forms.NumericUpDown();
             this.flpSan = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.btnChuyenSan = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lsvHoaDon = new System.Windows.Forms.ListView();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.cbChuyenSan = new System.Windows.Forms.ComboBox();
+            this.btnChuyenSan = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.nmSoSan = new System.Windows.Forms.NumericUpDown();
+            this.btnThemSan = new System.Windows.Forms.Button();
+            this.cbDichVu = new System.Windows.Forms.ComboBox();
+            this.cbSan = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.pnlSan.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -89,6 +89,7 @@ namespace QuanLySanBong
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin cá nhân";
+            this.thôngTinCáNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -105,6 +106,13 @@ namespace QuanLySanBong
             this.pnlSan.Size = new System.Drawing.Size(555, 520);
             this.pnlSan.TabIndex = 1;
             // 
+            // flpSan
+            // 
+            this.flpSan.Location = new System.Drawing.Point(3, 4);
+            this.flpSan.Name = "flpSan";
+            this.flpSan.Size = new System.Drawing.Size(549, 513);
+            this.flpSan.TabIndex = 0;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lsvHoaDon);
@@ -112,6 +120,15 @@ namespace QuanLySanBong
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(444, 339);
             this.panel2.TabIndex = 2;
+            // 
+            // lsvHoaDon
+            // 
+            this.lsvHoaDon.HideSelection = false;
+            this.lsvHoaDon.Location = new System.Drawing.Point(4, 4);
+            this.lsvHoaDon.Name = "lsvHoaDon";
+            this.lsvHoaDon.Size = new System.Drawing.Size(437, 332);
+            this.lsvHoaDon.TabIndex = 0;
+            this.lsvHoaDon.UseCompatibleStateImageBehavior = false;
             // 
             // panel3
             // 
@@ -123,14 +140,31 @@ namespace QuanLySanBong
             this.panel3.Size = new System.Drawing.Size(443, 74);
             this.panel3.TabIndex = 3;
             // 
-            // lsvHoaDon
+            // cbChuyenSan
             // 
-            this.lsvHoaDon.HideSelection = false;
-            this.lsvHoaDon.Location = new System.Drawing.Point(4, 4);
-            this.lsvHoaDon.Name = "lsvHoaDon";
-            this.lsvHoaDon.Size = new System.Drawing.Size(437, 332);
-            this.lsvHoaDon.TabIndex = 0;
-            this.lsvHoaDon.UseCompatibleStateImageBehavior = false;
+            this.cbChuyenSan.FormattingEnabled = true;
+            this.cbChuyenSan.Location = new System.Drawing.Point(38, 45);
+            this.cbChuyenSan.Name = "cbChuyenSan";
+            this.cbChuyenSan.Size = new System.Drawing.Size(148, 28);
+            this.cbChuyenSan.TabIndex = 6;
+            // 
+            // btnChuyenSan
+            // 
+            this.btnChuyenSan.Location = new System.Drawing.Point(38, 3);
+            this.btnChuyenSan.Name = "btnChuyenSan";
+            this.btnChuyenSan.Size = new System.Drawing.Size(148, 36);
+            this.btnChuyenSan.TabIndex = 5;
+            this.btnChuyenSan.Text = "Chuyển Sân";
+            this.btnChuyenSan.UseVisualStyleBackColor = true;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(308, 3);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(88, 58);
+            this.btnThanhToan.TabIndex = 4;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -142,31 +176,6 @@ namespace QuanLySanBong
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(443, 74);
             this.panel4.TabIndex = 4;
-            // 
-            // cbSan
-            // 
-            this.cbSan.FormattingEnabled = true;
-            this.cbSan.Location = new System.Drawing.Point(4, 4);
-            this.cbSan.Name = "cbSan";
-            this.cbSan.Size = new System.Drawing.Size(212, 28);
-            this.cbSan.TabIndex = 0;
-            // 
-            // cbDichVu
-            // 
-            this.cbDichVu.FormattingEnabled = true;
-            this.cbDichVu.Location = new System.Drawing.Point(4, 38);
-            this.cbDichVu.Name = "cbDichVu";
-            this.cbDichVu.Size = new System.Drawing.Size(212, 28);
-            this.cbDichVu.TabIndex = 1;
-            // 
-            // btnThemSan
-            // 
-            this.btnThemSan.Location = new System.Drawing.Point(240, 4);
-            this.btnThemSan.Name = "btnThemSan";
-            this.btnThemSan.Size = new System.Drawing.Size(88, 58);
-            this.btnThemSan.TabIndex = 2;
-            this.btnThemSan.Text = "Thêm Sân";
-            this.btnThemSan.UseVisualStyleBackColor = true;
             // 
             // nmSoSan
             // 
@@ -185,38 +194,30 @@ namespace QuanLySanBong
             0,
             0});
             // 
-            // flpSan
+            // btnThemSan
             // 
-            this.flpSan.Location = new System.Drawing.Point(3, 4);
-            this.flpSan.Name = "flpSan";
-            this.flpSan.Size = new System.Drawing.Size(549, 513);
-            this.flpSan.TabIndex = 0;
+            this.btnThemSan.Location = new System.Drawing.Point(240, 4);
+            this.btnThemSan.Name = "btnThemSan";
+            this.btnThemSan.Size = new System.Drawing.Size(88, 58);
+            this.btnThemSan.TabIndex = 2;
+            this.btnThemSan.Text = "Thêm Sân";
+            this.btnThemSan.UseVisualStyleBackColor = true;
             // 
-            // btnThanhToan
+            // cbDichVu
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(308, 3);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(88, 58);
-            this.btnThanhToan.TabIndex = 4;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.cbDichVu.FormattingEnabled = true;
+            this.cbDichVu.Location = new System.Drawing.Point(4, 38);
+            this.cbDichVu.Name = "cbDichVu";
+            this.cbDichVu.Size = new System.Drawing.Size(212, 28);
+            this.cbDichVu.TabIndex = 1;
             // 
-            // btnChuyenSan
+            // cbSan
             // 
-            this.btnChuyenSan.Location = new System.Drawing.Point(38, 3);
-            this.btnChuyenSan.Name = "btnChuyenSan";
-            this.btnChuyenSan.Size = new System.Drawing.Size(148, 36);
-            this.btnChuyenSan.TabIndex = 5;
-            this.btnChuyenSan.Text = "Chuyển Sân";
-            this.btnChuyenSan.UseVisualStyleBackColor = true;
-            // 
-            // cbChuyenSan
-            // 
-            this.cbChuyenSan.FormattingEnabled = true;
-            this.cbChuyenSan.Location = new System.Drawing.Point(38, 45);
-            this.cbChuyenSan.Name = "cbChuyenSan";
-            this.cbChuyenSan.Size = new System.Drawing.Size(148, 28);
-            this.cbChuyenSan.TabIndex = 6;
+            this.cbSan.FormattingEnabled = true;
+            this.cbSan.Location = new System.Drawing.Point(4, 4);
+            this.cbSan.Name = "cbSan";
+            this.cbSan.Size = new System.Drawing.Size(212, 28);
+            this.cbSan.TabIndex = 0;
             // 
             // fTableManager
             // 

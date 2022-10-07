@@ -41,3 +41,4 @@ C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe
 C:\Users\Lenovo\Desktop\quanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMenu.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fTableManager.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fThongTinCaNhan.resources

@@ -27,5 +27,11 @@ namespace QuanLySanBong
             fMenu f = new fMenu();
             f.ShowDialog();
         }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fThongTinCaNhan f = new fThongTinCaNhan();
+            f.ShowDialog();
+        }
     }
 }

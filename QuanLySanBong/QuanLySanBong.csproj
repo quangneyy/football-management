@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\Provider.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +65,12 @@
     <Compile Include="fTableManager.Designer.cs">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="fThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongTinCaNhan.Designer.cs">
+      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fMenu.resx">
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongTinCaNhan.resx">
+      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
