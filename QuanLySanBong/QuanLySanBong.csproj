@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\Provider.cs" />
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>
     </Compile>
