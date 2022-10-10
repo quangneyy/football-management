@@ -57,7 +57,7 @@ namespace QuanLySanBong
             this.label1.Location = new System.Drawing.Point(180, 185);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên Tài Khoản";
             // 
@@ -68,7 +68,7 @@ namespace QuanLySanBong
             this.label2.Location = new System.Drawing.Point(226, 292);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 25);
+            this.label2.Size = new System.Drawing.Size(80, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mật Khẩu";
             // 
@@ -77,16 +77,18 @@ namespace QuanLySanBong
             this.txtTaiKhoan.Location = new System.Drawing.Point(449, 180);
             this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(337, 30);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(337, 26);
             this.txtTaiKhoan.TabIndex = 3;
+            this.txtTaiKhoan.Text = "k20";
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(449, 287);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(337, 30);
+            this.txtMatKhau.Size = new System.Drawing.Size(337, 26);
             this.txtMatKhau.TabIndex = 4;
+            this.txtMatKhau.Text = "k";
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnThoat
@@ -111,13 +113,13 @@ namespace QuanLySanBong
             this.label3.Location = new System.Drawing.Point(295, 77);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(455, 29);
+            this.label3.Size = new System.Drawing.Size(379, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Đăng Nhập Tài Khoản Quản Lý Sân Bóng";
             // 
             // FormDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::QuanLySanBong.Properties.Resources.istockphoto_1308683679_612x612;

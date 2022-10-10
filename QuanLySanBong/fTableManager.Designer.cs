@@ -47,6 +47,9 @@ namespace QuanLySanBong
             this.btnThemSan = new System.Windows.Forms.Button();
             this.cbDichVu = new System.Windows.Forms.ComboBox();
             this.cbSan = new System.Windows.Forms.ComboBox();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.pnlSan.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,21 +60,21 @@ namespace QuanLySanBong
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.thôngTinTàiKhoảnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1023, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(909, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
@@ -81,87 +84,102 @@ namespace QuanLySanBong
             this.thôngTinCáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(182, 29);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin cá nhân";
             this.thôngTinCáNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // pnlSan
             // 
             this.pnlSan.Controls.Add(this.flpSan);
-            this.pnlSan.Location = new System.Drawing.Point(13, 46);
+            this.pnlSan.Location = new System.Drawing.Point(12, 37);
+            this.pnlSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSan.Name = "pnlSan";
-            this.pnlSan.Size = new System.Drawing.Size(555, 520);
+            this.pnlSan.Size = new System.Drawing.Size(493, 416);
             this.pnlSan.TabIndex = 1;
             // 
             // flpSan
             // 
-            this.flpSan.Location = new System.Drawing.Point(3, 4);
+            this.flpSan.AutoScroll = true;
+            this.flpSan.Location = new System.Drawing.Point(3, 3);
+            this.flpSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpSan.Name = "flpSan";
-            this.flpSan.Size = new System.Drawing.Size(549, 513);
+            this.flpSan.Size = new System.Drawing.Size(488, 458);
             this.flpSan.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lsvHoaDon);
-            this.panel2.Location = new System.Drawing.Point(574, 131);
+            this.panel2.Location = new System.Drawing.Point(510, 105);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(444, 339);
+            this.panel2.Size = new System.Drawing.Size(395, 271);
             this.panel2.TabIndex = 2;
             // 
             // lsvHoaDon
             // 
+            this.lsvHoaDon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lsvHoaDon.GridLines = true;
             this.lsvHoaDon.HideSelection = false;
-            this.lsvHoaDon.Location = new System.Drawing.Point(4, 4);
+            this.lsvHoaDon.Location = new System.Drawing.Point(4, 3);
+            this.lsvHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsvHoaDon.Name = "lsvHoaDon";
-            this.lsvHoaDon.Size = new System.Drawing.Size(437, 332);
+            this.lsvHoaDon.Size = new System.Drawing.Size(389, 266);
             this.lsvHoaDon.TabIndex = 0;
             this.lsvHoaDon.UseCompatibleStateImageBehavior = false;
+            this.lsvHoaDon.View = System.Windows.Forms.View.List;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.cbChuyenSan);
             this.panel3.Controls.Add(this.btnChuyenSan);
             this.panel3.Controls.Add(this.btnThanhToan);
-            this.panel3.Location = new System.Drawing.Point(575, 489);
+            this.panel3.Location = new System.Drawing.Point(511, 401);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(443, 74);
+            this.panel3.Size = new System.Drawing.Size(394, 79);
             this.panel3.TabIndex = 3;
             // 
             // cbChuyenSan
             // 
             this.cbChuyenSan.FormattingEnabled = true;
-            this.cbChuyenSan.Location = new System.Drawing.Point(38, 45);
+            this.cbChuyenSan.Location = new System.Drawing.Point(34, 44);
+            this.cbChuyenSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbChuyenSan.Name = "cbChuyenSan";
-            this.cbChuyenSan.Size = new System.Drawing.Size(148, 28);
+            this.cbChuyenSan.Size = new System.Drawing.Size(132, 24);
             this.cbChuyenSan.TabIndex = 6;
             // 
             // btnChuyenSan
             // 
-            this.btnChuyenSan.Location = new System.Drawing.Point(38, 3);
+            this.btnChuyenSan.Location = new System.Drawing.Point(34, 11);
+            this.btnChuyenSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChuyenSan.Name = "btnChuyenSan";
-            this.btnChuyenSan.Size = new System.Drawing.Size(148, 36);
+            this.btnChuyenSan.Size = new System.Drawing.Size(132, 29);
             this.btnChuyenSan.TabIndex = 5;
             this.btnChuyenSan.Text = "Chuyển Sân";
             this.btnChuyenSan.UseVisualStyleBackColor = true;
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(308, 3);
+            this.btnThanhToan.Location = new System.Drawing.Point(273, 11);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(88, 58);
+            this.btnThanhToan.Size = new System.Drawing.Size(78, 46);
             this.btnThanhToan.TabIndex = 4;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
@@ -172,21 +190,23 @@ namespace QuanLySanBong
             this.panel4.Controls.Add(this.btnThemSan);
             this.panel4.Controls.Add(this.cbDichVu);
             this.panel4.Controls.Add(this.cbSan);
-            this.panel4.Location = new System.Drawing.Point(574, 46);
+            this.panel4.Location = new System.Drawing.Point(510, 37);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(443, 74);
+            this.panel4.Size = new System.Drawing.Size(394, 59);
             this.panel4.TabIndex = 4;
             // 
             // nmSoSan
             // 
-            this.nmSoSan.Location = new System.Drawing.Point(343, 21);
+            this.nmSoSan.Location = new System.Drawing.Point(305, 17);
+            this.nmSoSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nmSoSan.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.nmSoSan.Name = "nmSoSan";
-            this.nmSoSan.Size = new System.Drawing.Size(83, 26);
+            this.nmSoSan.Size = new System.Drawing.Size(74, 22);
             this.nmSoSan.TabIndex = 3;
             this.nmSoSan.Value = new decimal(new int[] {
             1,
@@ -196,9 +216,10 @@ namespace QuanLySanBong
             // 
             // btnThemSan
             // 
-            this.btnThemSan.Location = new System.Drawing.Point(240, 4);
+            this.btnThemSan.Location = new System.Drawing.Point(213, 3);
+            this.btnThemSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemSan.Name = "btnThemSan";
-            this.btnThemSan.Size = new System.Drawing.Size(88, 58);
+            this.btnThemSan.Size = new System.Drawing.Size(78, 46);
             this.btnThemSan.TabIndex = 2;
             this.btnThemSan.Text = "Thêm Sân";
             this.btnThemSan.UseVisualStyleBackColor = true;
@@ -206,30 +227,41 @@ namespace QuanLySanBong
             // cbDichVu
             // 
             this.cbDichVu.FormattingEnabled = true;
-            this.cbDichVu.Location = new System.Drawing.Point(4, 38);
+            this.cbDichVu.Location = new System.Drawing.Point(4, 30);
+            this.cbDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDichVu.Name = "cbDichVu";
-            this.cbDichVu.Size = new System.Drawing.Size(212, 28);
+            this.cbDichVu.Size = new System.Drawing.Size(189, 24);
             this.cbDichVu.TabIndex = 1;
             // 
             // cbSan
             // 
             this.cbSan.FormattingEnabled = true;
-            this.cbSan.Location = new System.Drawing.Point(4, 4);
+            this.cbSan.Location = new System.Drawing.Point(4, 3);
+            this.cbSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSan.Name = "cbSan";
-            this.cbSan.Size = new System.Drawing.Size(212, 28);
+            this.cbSan.Size = new System.Drawing.Size(189, 24);
             this.cbSan.TabIndex = 0;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "id Thức Uống";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Count";
             // 
             // fTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 583);
+            this.ClientSize = new System.Drawing.Size(909, 509);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlSan);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fTableManager";
             this.Text = "Phần mềm quản lý sân đá bóng";
             this.menuStrip1.ResumeLayout(false);
@@ -264,5 +296,8 @@ namespace QuanLySanBong
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.ComboBox cbChuyenSan;
         private System.Windows.Forms.Button btnChuyenSan;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\HoaDonInfoDAO.cs" />
+    <Compile Include="DAO\SanDAO.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\HoaDonInfo.cs" />
+    <Compile Include="DTO\Table.cs" />
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,8 +163,6 @@
   <ItemGroup>
     <None Include="Resources\khungthanh.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
