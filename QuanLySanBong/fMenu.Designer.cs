@@ -57,13 +57,6 @@ namespace QuanLySanBong
             this.btnThemSan = new System.Windows.Forms.Button();
             this.tpDichVu = new System.Windows.Forms.TabPage();
             this.tbNhanVien = new System.Windows.Forms.TabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnXemNV = new System.Windows.Forms.Button();
-            this.btnXoaNV = new System.Windows.Forms.Button();
-            this.btnSuaNV = new System.Windows.Forms.Button();
-            this.btnThemNV = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.dtgvNhanVien = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txbSDTNV = new System.Windows.Forms.TextBox();
@@ -74,6 +67,13 @@ namespace QuanLySanBong
             this.panel14 = new System.Windows.Forms.Panel();
             this.txbIDNV = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.dtgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnXemNV = new System.Windows.Forms.Button();
+            this.btnXoaNV = new System.Windows.Forms.Button();
+            this.btnSuaNV = new System.Windows.Forms.Button();
+            this.btnThemNV = new System.Windows.Forms.Button();
             this.tcMenu.SuspendLayout();
             this.tpDoanhThu.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -88,13 +88,13 @@ namespace QuanLySanBong
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSan)).BeginInit();
             this.panel1.SuspendLayout();
             this.tbNhanVien.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).BeginInit();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcMenu
@@ -334,6 +334,7 @@ namespace QuanLySanBong
             this.btnThemSan.TabIndex = 0;
             this.btnThemSan.Text = "Thêm";
             this.btnThemSan.UseVisualStyleBackColor = true;
+            this.btnThemSan.Click += new System.EventHandler(this.btnThemSan_Click);
             // 
             // tpDichVu
             // 
@@ -357,71 +358,6 @@ namespace QuanLySanBong
             this.tbNhanVien.TabIndex = 3;
             this.tbNhanVien.Text = "Nhân viên";
             this.tbNhanVien.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.btnXemNV);
-            this.panel9.Controls.Add(this.btnXoaNV);
-            this.panel9.Controls.Add(this.btnSuaNV);
-            this.panel9.Controls.Add(this.btnThemNV);
-            this.panel9.Location = new System.Drawing.Point(6, 6);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(642, 83);
-            this.panel9.TabIndex = 1;
-            // 
-            // btnXemNV
-            // 
-            this.btnXemNV.Location = new System.Drawing.Point(481, 24);
-            this.btnXemNV.Name = "btnXemNV";
-            this.btnXemNV.Size = new System.Drawing.Size(87, 44);
-            this.btnXemNV.TabIndex = 3;
-            this.btnXemNV.Text = "Xem";
-            this.btnXemNV.UseVisualStyleBackColor = true;
-            // 
-            // btnXoaNV
-            // 
-            this.btnXoaNV.Location = new System.Drawing.Point(321, 24);
-            this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.Size = new System.Drawing.Size(87, 44);
-            this.btnXoaNV.TabIndex = 2;
-            this.btnXoaNV.Text = "Xóa";
-            this.btnXoaNV.UseVisualStyleBackColor = true;
-            // 
-            // btnSuaNV
-            // 
-            this.btnSuaNV.Location = new System.Drawing.Point(169, 24);
-            this.btnSuaNV.Name = "btnSuaNV";
-            this.btnSuaNV.Size = new System.Drawing.Size(87, 44);
-            this.btnSuaNV.TabIndex = 1;
-            this.btnSuaNV.Text = "Sửa";
-            this.btnSuaNV.UseVisualStyleBackColor = true;
-            // 
-            // btnThemNV
-            // 
-            this.btnThemNV.Location = new System.Drawing.Point(23, 24);
-            this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.Size = new System.Drawing.Size(87, 44);
-            this.btnThemNV.TabIndex = 0;
-            this.btnThemNV.Text = "Thêm";
-            this.btnThemNV.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.dtgvNhanVien);
-            this.panel10.Location = new System.Drawing.Point(6, 104);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(642, 420);
-            this.panel10.TabIndex = 2;
-            // 
-            // dtgvNhanVien
-            // 
-            this.dtgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvNhanVien.Location = new System.Drawing.Point(4, 4);
-            this.dtgvNhanVien.Name = "dtgvNhanVien";
-            this.dtgvNhanVien.RowHeadersWidth = 62;
-            this.dtgvNhanVien.RowTemplate.Height = 28;
-            this.dtgvNhanVien.Size = new System.Drawing.Size(635, 413);
-            this.dtgvNhanVien.TabIndex = 0;
             // 
             // panel11
             // 
@@ -508,6 +444,71 @@ namespace QuanLySanBong
             this.label6.TabIndex = 0;
             this.label6.Text = "ID";
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.dtgvNhanVien);
+            this.panel10.Location = new System.Drawing.Point(6, 104);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(642, 420);
+            this.panel10.TabIndex = 2;
+            // 
+            // dtgvNhanVien
+            // 
+            this.dtgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvNhanVien.Location = new System.Drawing.Point(4, 4);
+            this.dtgvNhanVien.Name = "dtgvNhanVien";
+            this.dtgvNhanVien.RowHeadersWidth = 62;
+            this.dtgvNhanVien.RowTemplate.Height = 28;
+            this.dtgvNhanVien.Size = new System.Drawing.Size(635, 413);
+            this.dtgvNhanVien.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btnXemNV);
+            this.panel9.Controls.Add(this.btnXoaNV);
+            this.panel9.Controls.Add(this.btnSuaNV);
+            this.panel9.Controls.Add(this.btnThemNV);
+            this.panel9.Location = new System.Drawing.Point(6, 6);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(642, 83);
+            this.panel9.TabIndex = 1;
+            // 
+            // btnXemNV
+            // 
+            this.btnXemNV.Location = new System.Drawing.Point(481, 24);
+            this.btnXemNV.Name = "btnXemNV";
+            this.btnXemNV.Size = new System.Drawing.Size(87, 44);
+            this.btnXemNV.TabIndex = 3;
+            this.btnXemNV.Text = "Xem";
+            this.btnXemNV.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaNV
+            // 
+            this.btnXoaNV.Location = new System.Drawing.Point(321, 24);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.Size = new System.Drawing.Size(87, 44);
+            this.btnXoaNV.TabIndex = 2;
+            this.btnXoaNV.Text = "Xóa";
+            this.btnXoaNV.UseVisualStyleBackColor = true;
+            // 
+            // btnSuaNV
+            // 
+            this.btnSuaNV.Location = new System.Drawing.Point(169, 24);
+            this.btnSuaNV.Name = "btnSuaNV";
+            this.btnSuaNV.Size = new System.Drawing.Size(87, 44);
+            this.btnSuaNV.TabIndex = 1;
+            this.btnSuaNV.Text = "Sửa";
+            this.btnSuaNV.UseVisualStyleBackColor = true;
+            // 
+            // btnThemNV
+            // 
+            this.btnThemNV.Location = new System.Drawing.Point(23, 24);
+            this.btnThemNV.Name = "btnThemNV";
+            this.btnThemNV.Size = new System.Drawing.Size(87, 44);
+            this.btnThemNV.TabIndex = 0;
+            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.UseVisualStyleBackColor = true;
+            // 
             // fMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -533,9 +534,6 @@ namespace QuanLySanBong
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSan)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tbNhanVien.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -543,6 +541,9 @@ namespace QuanLySanBong
             this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).EndInit();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

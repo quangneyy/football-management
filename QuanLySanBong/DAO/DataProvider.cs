@@ -20,7 +20,7 @@ namespace QuanLySanBong.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=DESKTOP-J16KJ8A\\SQLEXPRESS;Initial Catalog=QLSanBanh;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-J16KJ8A\\SQLEXPRESS;Initial Catalog=QuanLySanBong;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

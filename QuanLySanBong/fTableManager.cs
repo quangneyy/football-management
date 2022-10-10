@@ -15,8 +15,18 @@ namespace QuanLySanBong
         public fTableManager()
         {
             InitializeComponent();
+            loadSan();
         }
 
+        #region Method
+        void loadSan()
+        {
+
+        }
+        #endregion
+
+
+        #region Events
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -33,5 +43,6 @@ namespace QuanLySanBong
             fThongTinCaNhan f = new fThongTinCaNhan();
             f.ShowDialog();
         }
+        #endregion
     }
 }

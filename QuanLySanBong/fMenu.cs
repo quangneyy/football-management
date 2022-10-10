@@ -27,5 +27,10 @@ namespace QuanLySanBong
 
             dtgvNhanVien.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "Nguyen Thi Na" });
         }
+
+        private void btnThemSan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace QuanLySanBong.DAO
 
         public bool Login(string userName, string passWord)
         {
-            string query = "select * from TaiKhoan where Username = '"+ userName + "' and Password = '" + passWord + "'";
+            string query = "select * from TaiKhoan where TenTaiKhoan = '" + userName + "' and MatKhau = '" + passWord + "'";
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
