@@ -19,8 +19,9 @@ namespace QuanLySanBong.DAO
         private HoaDonInfoDAO() { }
         public List<HoaDonInfo> getHoaDonInfo(int id)
         {
+            
             List<HoaDonInfo> list = new List<HoaDonInfo>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("select *from dbo.ThongTinHoaDon where idHoaDon "+ id);
+            DataTable data = DataProvider.Instance.ExecuteQuery("select *  from dbo.ThongTinHoaDon where idHoaDon = " + id);
             foreach (DataRow row in data.Rows)
             {
                 HoaDonInfo hd = new HoaDonInfo(row);

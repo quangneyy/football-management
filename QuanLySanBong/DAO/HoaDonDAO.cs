@@ -19,13 +19,13 @@ namespace QuanLySanBong.DAO
         private HoaDonDAO() { }
         public int getHoaDOn(int id)
         {
-            DataTable datas = DataProvider.Instance.ExecuteQuery("select * from dbo.HoaDon where id = "+id+" and status = 1");
+            DataTable datas = DataProvider.Instance.ExecuteQuery("select * from dbo.HoaDon where id = "+id+" and status = 0");
             if(datas.Rows.Count > 0)
             {
                 HoaDon hd = new HoaDon(datas.Rows[0]);
                 return hd.Id;
             }
-            return -1;
+            return 1;
         }
     }
 }

@@ -10,6 +10,8 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using Menu = QuanLySanBong.DTO.Menu;
 
 namespace QuanLySanBong
 {
@@ -43,29 +45,37 @@ namespace QuanLySanBong
                         button.BackColor = Color.Red;
                         break;
                 }
+                
                 flpSan.Controls.Add(button);
             }
         }
 
         void showHoaDon(int id)
         {
-            List<HoaDonInfo> hdinfo = HoaDonInfoDAO.Instanse.getHoaDonInfo(HoaDonDAO.Instanse.getHoaDOn(id));
-            foreach (HoaDonInfo item in hdinfo)
+            lsvHoaDon.Items.Clear();
+            List<Menu> hdinfo = MenuDAO.Instance.getlistMenu(id);
+            float tongtien = 0;
+            foreach (Menu item in hdinfo)
             {
-                ListViewItem listhd = new ListViewItem(item.IdThucUong.ToString());
+                ListViewItem listhd = new ListViewItem(item.TenThucUong.ToString());
                 listhd.SubItems.Add(item.Count.ToString());
-                
+                listhd.SubItems.Add(item.Price.ToString());
+                listhd.SubItems.Add(item.ThanhTien.ToString());
+                tongtien += item.ThanhTien;
+                lsvHoaDon.Items.Add(listhd);
 
             }
+            CultureInfo culture = new CultureInfo("vi-VN");
+            txtTongtien.Text = tongtien.ToString("c",culture);
         }
-        
-        #region Events
         private void Button_Click(object sender, EventArgs e)
         {
-            int tableId = ((sender as Button).Tag as Table ).Id;
+            int tableId = ((sender as Button).Tag as Table).Id;
             showHoaDon(tableId);
-            
+
         }
+        #region Events
+
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
