@@ -19,13 +19,33 @@ namespace QuanLySanBong.DAO
         private HoaDonDAO() { }
         public int getHoaDOn(int id)
         {
-            DataTable datas = DataProvider.Instance.ExecuteQuery("select * from dbo.HoaDon where id = "+id+" and status = 0");
-            if(datas.Rows.Count > 0)
+            DataTable datas = DataProvider.Instance.ExecuteQuery("select * from dbo.HoaDon where id = " + id + " and status = 0");
+            if (datas.Rows.Count > 0)
             {
                 HoaDon hd = new HoaDon(datas.Rows[0]);
                 return hd.Id;
             }
             return 1;
+        }
+        public void checkout(int id)
+        {
+            DataProvider.Instance.ExecuteQuery("update dbo.HoaDon set status = 1 where = " + id);
+        }
+        public void insertHoaDOn(int id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("exec usp_HoaDon @idSan ", new object[] { id });
+        }
+        public int getMaxHoaDon()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExcecuteScalar("select max(id) from dbo.HoaDon");
+            }
+            catch
+            {
+                return 1;
+            }
+
         }
     }
 }

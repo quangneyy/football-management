@@ -29,5 +29,9 @@ namespace QuanLySanBong.DAO
             }
             return list;
         }
+        public void insertHoaDOnÌno(int idHoaDon, int idThucUong, int count)
+        {
+            DataProvider.Instance.ExecuteNonQuery("usp_TTHoaDon12222 @idHoaDon ,@idThucUong ,@count", new object[] { idHoaDon,idThucUong,count });
+        }
     }
 }

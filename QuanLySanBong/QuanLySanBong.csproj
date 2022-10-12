@@ -50,12 +50,16 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HoaDonInfoDAO.cs" />
+    <Compile Include="DAO\LoaiTUDAO.cs" />
     <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\SanDAO.cs" />
+    <Compile Include="DAO\ThucUongDAO.cs" />
     <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\HoaDonInfo.cs" />
+    <Compile Include="DTO\LoaiTU.cs" />
     <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
+    <Compile Include="DTO\ThucUong.cs" />
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>
     </Compile>

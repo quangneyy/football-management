@@ -40,7 +40,10 @@ namespace QuanLySanBong
             this.lsvHoaDon = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtTongtien = new System.Windows.Forms.TextBox();
             this.cbChuyenSan = new System.Windows.Forms.ComboBox();
             this.btnChuyenSan = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
@@ -49,9 +52,6 @@ namespace QuanLySanBong
             this.btnThemSan = new System.Windows.Forms.Button();
             this.cbDichVu = new System.Windows.Forms.ComboBox();
             this.cbSan = new System.Windows.Forms.ComboBox();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.txtTongtien = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.pnlSan.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -157,6 +157,16 @@ namespace QuanLySanBong
             this.columnHeader2.Text = "Số Lượng";
             this.columnHeader2.Width = 90;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            this.columnHeader3.Width = 90;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
+            this.columnHeader4.Width = 90;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txtTongtien);
@@ -168,6 +178,18 @@ namespace QuanLySanBong
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(394, 79);
             this.panel3.TabIndex = 3;
+            // 
+            // txtTongtien
+            // 
+            this.txtTongtien.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongtien.ForeColor = System.Drawing.Color.Red;
+            this.txtTongtien.Location = new System.Drawing.Point(151, 35);
+            this.txtTongtien.Name = "txtTongtien";
+            this.txtTongtien.ReadOnly = true;
+            this.txtTongtien.Size = new System.Drawing.Size(139, 28);
+            this.txtTongtien.TabIndex = 7;
+            this.txtTongtien.Text = "0";
+            this.txtTongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // cbChuyenSan
             // 
@@ -197,6 +219,7 @@ namespace QuanLySanBong
             this.btnThanhToan.TabIndex = 4;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // panel4
             // 
@@ -237,6 +260,7 @@ namespace QuanLySanBong
             this.btnThemSan.TabIndex = 2;
             this.btnThemSan.Text = "Thêm Sân";
             this.btnThemSan.UseVisualStyleBackColor = true;
+            this.btnThemSan.Click += new System.EventHandler(this.btnThemSan_Click);
             // 
             // cbDichVu
             // 
@@ -255,28 +279,7 @@ namespace QuanLySanBong
             this.cbSan.Name = "cbSan";
             this.cbSan.Size = new System.Drawing.Size(189, 24);
             this.cbSan.TabIndex = 0;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Đơn Giá";
-            this.columnHeader3.Width = 90;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Thành Tiền";
-            this.columnHeader4.Width = 90;
-            // 
-            // txtTongtien
-            // 
-            this.txtTongtien.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongtien.ForeColor = System.Drawing.Color.Red;
-            this.txtTongtien.Location = new System.Drawing.Point(151, 35);
-            this.txtTongtien.Name = "txtTongtien";
-            this.txtTongtien.ReadOnly = true;
-            this.txtTongtien.Size = new System.Drawing.Size(139, 28);
-            this.txtTongtien.TabIndex = 7;
-            this.txtTongtien.Text = "0";
-            this.txtTongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.cbSan.SelectedIndexChanged += new System.EventHandler(this.cbSan_SelectedIndexChanged);
             // 
             // fTableManager
             // 
