@@ -59,7 +59,6 @@ namespace QuanLySanBong
             this.dgvMatHang.RowTemplate.Height = 28;
             this.dgvMatHang.Size = new System.Drawing.Size(823, 289);
             this.dgvMatHang.TabIndex = 0;
-            this.dgvMatHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMatHang_CellClick);
             // 
             // txbTenMatHang
             // 
@@ -125,7 +124,6 @@ namespace QuanLySanBong
             this.txbDonGia.Name = "txbDonGia";
             this.txbDonGia.Size = new System.Drawing.Size(174, 26);
             this.txbDonGia.TabIndex = 6;
-            this.txbDonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDonGia_KeyPress);
             // 
             // btnSua
             // 
@@ -138,7 +136,6 @@ namespace QuanLySanBong
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -151,7 +148,6 @@ namespace QuanLySanBong
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label3
             // 
@@ -163,7 +159,6 @@ namespace QuanLySanBong
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 19);
             this.label3.TabIndex = 10;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // fMatHang
             // 

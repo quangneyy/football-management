@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLySanMini" Class="dbSanContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-J16KJ8A\SQLEXPRESS;Initial Catalog=QuanLySanMini;Integrated Security=True" SettingsObjectName="QuanLySanBong.Properties.Settings" SettingsPropertyName="QuanLySanMiniConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChiTietHoaDonBan" Member="ChiTietHoaDonBans">
+    <Type Name="ChiTietHoaDonBan">
+      <Column Name="IDHoaDon" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDMatHang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HoaDonBanHang_ChiTietHoaDonBan" Member="HoaDonBanHang" ThisKey="IDHoaDon" OtherKey="IDHoaDon" Type="HoaDonBanHang" IsForeignKey="true" />
+      <Association Name="MatHang_ChiTietHoaDonBan" Member="MatHang" ThisKey="IDMatHang" OtherKey="ID" Type="MatHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietHoaDonNhap" Member="ChiTietHoaDonNhaps">
+    <Type Name="ChiTietHoaDonNhap">
+      <Column Name="IDHoaDon" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDMatHang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGiaNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HoaDonNhap_ChiTietHoaDonNhap" Member="HoaDonNhap" ThisKey="IDHoaDon" OtherKey="ID" Type="HoaDonNhap" IsForeignKey="true" />
+      <Association Name="MatHang_ChiTietHoaDonNhap" Member="MatHang" ThisKey="IDMatHang" OtherKey="ID" Type="MatHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoaDonBanHang" Member="HoaDonBanHangs">
+    <Type Name="HoaDonBanHang">
+      <Column Name="IDHoaDon" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThoiGianBDau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ThoiGianKetThuc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DonGiaSan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayBan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiBan" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiCapNhat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="HoaDonBanHang_ChiTietHoaDonBan" Member="ChiTietHoaDonBans" ThisKey="IDHoaDon" OtherKey="IDHoaDon" Type="ChiTietHoaDonBan" />
+      <Association Name="San_HoaDonBanHang" Member="San" ThisKey="IDSan" OtherKey="ID" Type="San" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoaDonNhap" Member="HoaDonNhaps">
+    <Type Name="HoaDonNhap">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NhanVienNhap" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TienThanhToan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiTao" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiCapNhat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="HoaDonNhap_ChiTietHoaDonNhap" Member="ChiTietHoaDonNhaps" ThisKey="ID" OtherKey="IDHoaDon" Type="ChiTietHoaDonNhap" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiSan" Member="LoaiSans">
+    <Type Name="LoaiSan">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLoaiSan" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiCapNhat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="LoaiSan_San" Member="Sans" ThisKey="ID" OtherKey="IDLoaiSan" Type="San" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MatHang" Member="MatHangs">
+    <Type Name="MatHang">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenMatHang" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaBan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiTao" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiCapNhat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="MatHang_ChiTietHoaDonBan" Member="ChiTietHoaDonBans" ThisKey="ID" OtherKey="IDMatHang" Type="ChiTietHoaDonBan" />
+      <Association Name="MatHang_ChiTietHoaDonNhap" Member="ChiTietHoaDonNhaps" ThisKey="ID" OtherKey="IDMatHang" Type="ChiTietHoaDonNhap" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="Username" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="HoVaTen" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.San" Member="Sans">
+    <Type Name="San">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenSan" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TrangThai" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="IDLoaiSan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiCapNhat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="San_HoaDonBanHang" Member="HoaDonBanHangs" ThisKey="ID" OtherKey="IDSan" Type="HoaDonBanHang" />
+      <Association Name="LoaiSan_San" Member="LoaiSan" ThisKey="IDLoaiSan" OtherKey="ID" Type="LoaiSan" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
