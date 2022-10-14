@@ -59,3 +59,4 @@ C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework
 C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMatHang.resources
 C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CopyComplete
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fLoaiSan.resources

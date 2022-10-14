@@ -63,7 +63,7 @@ namespace QuanLySanBong
             // txbTenMatHang
             // 
             this.txbTenMatHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbTenMatHang.Location = new System.Drawing.Point(192, 105);
+            this.txbTenMatHang.Location = new System.Drawing.Point(205, 101);
             this.txbTenMatHang.Name = "txbTenMatHang";
             this.txbTenMatHang.Size = new System.Drawing.Size(174, 26);
             this.txbTenMatHang.TabIndex = 1;
@@ -76,9 +76,9 @@ namespace QuanLySanBong
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(73, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 19);
+            this.label1.Size = new System.Drawing.Size(112, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Tên mặt hàng";
+            this.label1.Text = "Ten mat hang";
             // 
             // btnThem
             // 
@@ -99,7 +99,7 @@ namespace QuanLySanBong
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(342, 20);
+            this.label2.Location = new System.Drawing.Point(307, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 19);
             this.label2.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace QuanLySanBong
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(455, 95);
+            this.label4.Location = new System.Drawing.Point(455, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 19);
             this.label4.TabIndex = 7;
@@ -120,7 +120,7 @@ namespace QuanLySanBong
             // txbDonGia
             // 
             this.txbDonGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbDonGia.Location = new System.Drawing.Point(539, 91);
+            this.txbDonGia.Location = new System.Drawing.Point(557, 98);
             this.txbDonGia.Name = "txbDonGia";
             this.txbDonGia.Size = new System.Drawing.Size(174, 26);
             this.txbDonGia.TabIndex = 6;
