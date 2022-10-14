@@ -15,8 +15,7 @@ namespace QuanLySanBong.Model
             ChiTietHoaDonNhap = new HashSet<ChiTietHoaDonNhap>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long ID { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [StringLength(30)]
@@ -24,7 +23,7 @@ namespace QuanLySanBong.Model
 
         public DateTime NgayNhap { get; set; }
 
-        public byte? TienThanhToan { get; set; }
+        public int? TienThanhToan { get; set; }
 
         public DateTime NgayTao { get; set; }
 

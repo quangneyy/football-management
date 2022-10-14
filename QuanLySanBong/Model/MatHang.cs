@@ -16,7 +16,6 @@ namespace QuanLySanBong.Model
             ChiTietHoaDonNhap = new HashSet<ChiTietHoaDonNhap>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]

@@ -17,7 +17,7 @@ namespace QuanLySanBong.Model
         [StringLength(250)]
         public string Password { get; set; }
 
-        [StringLength(50)]
+        [StringLength(30)]
         public string HoVaTen { get; set; }
 
         [StringLength(30)]

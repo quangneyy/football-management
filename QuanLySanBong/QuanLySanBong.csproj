@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="fMatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fMatHang.Designer.cs">
+      <DependentUpon>fMatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\ChiTietHoaDonBan.cs" />
     <Compile Include="Model\ChiTietHoaDonNhap.cs" />
@@ -72,6 +72,9 @@
     <Compile Include="Model\San.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fMatHang.resx">
+      <DependentUpon>fMatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

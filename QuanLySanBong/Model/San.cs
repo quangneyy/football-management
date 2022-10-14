@@ -15,8 +15,7 @@ namespace QuanLySanBong.Model
             HoaDonBanHang = new HashSet<HoaDonBanHang>();
         }
 
-        [StringLength(20)]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [StringLength(50)]

@@ -53,3 +53,9 @@ C:\Users\Lenovo\Desktop\quanLySanBong1\QuanLySanBong\obj\Debug\QuanLySanBong.csp
 C:\Users\Lenovo\Desktop\quanLySanBong1\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\quanLySanBong1\QuanLySanBong\obj\Debug\QuanLySanBong.exe
 C:\Users\Lenovo\Desktop\quanLySanBong1\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework.dll
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework.xml
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMatHang.resources
+C:\Users\ACER\Source\Repos\quanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CopyComplete

@@ -15,7 +15,6 @@ namespace QuanLySanBong.Model
             San = new HashSet<San>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]

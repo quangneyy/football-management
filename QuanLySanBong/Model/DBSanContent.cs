@@ -24,10 +24,6 @@ namespace QuanLySanBong.Model
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<HoaDonBanHang>()
-                .Property(e => e.IDSan)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<HoaDonBanHang>()
                 .Property(e => e.NguoiBan)
                 .IsUnicode(false);
 
@@ -61,6 +57,14 @@ namespace QuanLySanBong.Model
                 .WithRequired(e => e.HoaDonNhap)
                 .HasForeignKey(e => e.IDHoaDon)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<LoaiSan>()
+                .Property(e => e.NguoiTao)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LoaiSan>()
+                .Property(e => e.NguoiCapNhat)
+                .IsUnicode(false);
 
             modelBuilder.Entity<LoaiSan>()
                 .HasMany(e => e.San)
@@ -99,12 +103,8 @@ namespace QuanLySanBong.Model
                 .Property(e => e.Password)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<San>()
-                .Property(e => e.ID)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<San>()
-                .Property(e => e.TenSan)
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.DiaChi)
                 .IsUnicode(false);
 
             modelBuilder.Entity<San>()

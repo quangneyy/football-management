@@ -16,17 +16,17 @@ namespace QuanLySanBong.Model
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long IDHoaDon { get; set; }
+        public int IDHoaDon { get; set; }
 
-        [StringLength(20)]
-        public string IDSan { get; set; }
+        public int? IDSan { get; set; }
 
-        public DateTime? ThoiGanBD { get; set; }
+        public DateTime? ThoiGianBDau { get; set; }
 
-        public DateTime? ThoiGianKT { get; set; }
+        public DateTime? ThoiGianKetThuc { get; set; }
 
         public int? DonGiaSan { get; set; }
+
+        public DateTime? NgayBan { get; set; }
 
         [StringLength(30)]
         public string NguoiBan { get; set; }

@@ -12,7 +12,7 @@ namespace QuanLySanBong.Model
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long IDHoaDon { get; set; }
+        public int IDHoaDon { get; set; }
 
         [Key]
         [Column(Order = 1)]
@@ -21,7 +21,7 @@ namespace QuanLySanBong.Model
 
         public int? SoLuong { get; set; }
 
-        public int? DonGia { get; set; }
+        public int? DonGiaNhap { get; set; }
 
         public virtual HoaDonNhap HoaDonNhap { get; set; }
 
