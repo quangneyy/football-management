@@ -58,6 +58,7 @@ namespace QuanLySanBong
             this.dgvLoaiSan.RowTemplate.Height = 28;
             this.dgvLoaiSan.Size = new System.Drawing.Size(823, 328);
             this.dgvLoaiSan.TabIndex = 1;
+            this.dgvLoaiSan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiSan_CellClick);
             // 
             // label2
             // 
@@ -69,7 +70,7 @@ namespace QuanLySanBong
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 19);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Quản Lý Loai San";
+            this.label2.Text = "Quản Lý Loại Sân";
             // 
             // label4
             // 
@@ -102,7 +103,7 @@ namespace QuanLySanBong
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Loai San";
+            this.label1.Text = "Loại Sân";
             // 
             // txbLoaiSan
             // 
@@ -119,10 +120,11 @@ namespace QuanLySanBong
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnXoa.Location = new System.Drawing.Point(704, 163);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(86, 26);
+            this.btnXoa.Size = new System.Drawing.Size(81, 42);
             this.btnXoa.TabIndex = 14;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -131,10 +133,11 @@ namespace QuanLySanBong
             this.btnSua.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSua.Location = new System.Drawing.Point(592, 163);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(86, 26);
+            this.btnSua.Size = new System.Drawing.Size(85, 42);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -143,7 +146,7 @@ namespace QuanLySanBong
             this.btnThem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnThem.Location = new System.Drawing.Point(472, 163);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(86, 26);
+            this.btnThem.Size = new System.Drawing.Size(91, 42);
             this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;

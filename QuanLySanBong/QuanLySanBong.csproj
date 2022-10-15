@@ -73,6 +73,12 @@
     <Compile Include="fMatHang.Designer.cs">
       <DependentUpon>fMatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSan.Designer.cs">
+      <DependentUpon>fSan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fLoaiSan.resx">
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMatHang.resx">
       <DependentUpon>fMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSan.resx">
+      <DependentUpon>fSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

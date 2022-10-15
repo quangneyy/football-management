@@ -76,9 +76,9 @@ namespace QuanLySanBong
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(73, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 19);
+            this.label1.Size = new System.Drawing.Size(113, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Ten mat hang";
+            this.label1.Text = "Tên mặt hàng";
             // 
             // btnThem
             // 
