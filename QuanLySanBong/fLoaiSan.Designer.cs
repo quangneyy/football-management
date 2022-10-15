@@ -90,7 +90,7 @@ namespace QuanLySanBong
             this.txbDonGia.Location = new System.Drawing.Point(611, 103);
             this.txbDonGia.Name = "txbDonGia";
             this.txbDonGia.Size = new System.Drawing.Size(174, 26);
-            this.txbDonGia.TabIndex = 10;
+            this.txbDonGia.TabIndex = 2;
             this.txbDonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDonGia_KeyPress);
             // 
             // label1
@@ -111,7 +111,7 @@ namespace QuanLySanBong
             this.txbLoaiSan.Location = new System.Drawing.Point(215, 107);
             this.txbLoaiSan.Name = "txbLoaiSan";
             this.txbLoaiSan.Size = new System.Drawing.Size(174, 26);
-            this.txbLoaiSan.TabIndex = 8;
+            this.txbLoaiSan.TabIndex = 1;
             // 
             // btnXoa
             // 
@@ -121,7 +121,7 @@ namespace QuanLySanBong
             this.btnXoa.Location = new System.Drawing.Point(704, 163);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(81, 42);
-            this.btnXoa.TabIndex = 14;
+            this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -134,7 +134,7 @@ namespace QuanLySanBong
             this.btnSua.Location = new System.Drawing.Point(592, 163);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 42);
-            this.btnSua.TabIndex = 13;
+            this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -147,7 +147,7 @@ namespace QuanLySanBong
             this.btnThem.Location = new System.Drawing.Point(472, 163);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(91, 42);
-            this.btnThem.TabIndex = 12;
+            this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);

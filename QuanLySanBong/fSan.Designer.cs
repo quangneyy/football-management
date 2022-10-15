@@ -68,7 +68,7 @@ namespace QuanLySanBong
             this.btnXoa.Location = new System.Drawing.Point(726, 149);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(87, 41);
-            this.btnXoa.TabIndex = 22;
+            this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -81,7 +81,7 @@ namespace QuanLySanBong
             this.btnSua.Location = new System.Drawing.Point(589, 149);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(94, 41);
-            this.btnSua.TabIndex = 21;
+            this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -94,7 +94,7 @@ namespace QuanLySanBong
             this.btnThem.Location = new System.Drawing.Point(458, 149);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(86, 41);
-            this.btnThem.TabIndex = 20;
+            this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -129,7 +129,7 @@ namespace QuanLySanBong
             this.txbTenSan.Location = new System.Drawing.Point(174, 89);
             this.txbTenSan.Name = "txbTenSan";
             this.txbTenSan.Size = new System.Drawing.Size(179, 26);
-            this.txbTenSan.TabIndex = 16;
+            this.txbTenSan.TabIndex = 1;
             // 
             // label2
             // 
@@ -149,7 +149,7 @@ namespace QuanLySanBong
             this.cbbLoaiSan.Location = new System.Drawing.Point(589, 89);
             this.cbbLoaiSan.Name = "cbbLoaiSan";
             this.cbbLoaiSan.Size = new System.Drawing.Size(224, 28);
-            this.cbbLoaiSan.TabIndex = 23;
+            this.cbbLoaiSan.TabIndex = 2;
             // 
             // fSan
             // 

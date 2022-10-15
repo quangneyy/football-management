@@ -16,7 +16,7 @@ namespace QuanLySanBong
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fSan());
+            Application.Run(new fNhanVien());
         }
     }
 }
