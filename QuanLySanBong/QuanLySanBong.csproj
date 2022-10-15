@@ -61,6 +61,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbSanContent.dbml</DependentUpon>
     </Compile>
+    <Compile Include="fBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBanHang.Designer.cs">
+      <DependentUpon>fBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLoaiSan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fBanHang.resx">
+      <DependentUpon>fBanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLoaiSan.resx">
       <DependentUpon>fLoaiSan.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-san.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inuse-san.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-san1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
