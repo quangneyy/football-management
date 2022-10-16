@@ -63,3 +63,6 @@ C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.f
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fSan.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fNhanVien.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fBanHang.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fOrder.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMain.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fDangNhap.resources

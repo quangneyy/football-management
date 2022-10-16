@@ -67,11 +67,23 @@
     <Compile Include="fBanHang.Designer.cs">
       <DependentUpon>fBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLoaiSan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLoaiSan.Designer.cs">
       <DependentUpon>fLoaiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
     <Compile Include="fMatHang.cs">
       <SubType>Form</SubType>
@@ -85,6 +97,12 @@
     <Compile Include="fNhanVien.Designer.cs">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="fOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOrder.Designer.cs">
+      <DependentUpon>fOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,14 +114,23 @@
     <EmbeddedResource Include="fBanHang.resx">
       <DependentUpon>fBanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLoaiSan.resx">
       <DependentUpon>fLoaiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMatHang.resx">
       <DependentUpon>fMatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOrder.resx">
+      <DependentUpon>fOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSan.resx">
       <DependentUpon>fSan.cs</DependentUpon>
@@ -151,6 +178,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-san1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

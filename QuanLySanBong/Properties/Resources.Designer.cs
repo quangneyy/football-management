@@ -63,6 +63,26 @@ namespace QuanLySanBong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap form {
+            get {
+                object obj = ResourceManager.GetObject("form", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_san {
             get {
                 object obj = ResourceManager.GetObject("free-san", resourceCulture);
@@ -86,6 +106,16 @@ namespace QuanLySanBong.Properties {
         internal static System.Drawing.Bitmap inuse_san {
             get {
                 object obj = ResourceManager.GetObject("inuse-san", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap popup {
+            get {
+                object obj = ResourceManager.GetObject("popup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
