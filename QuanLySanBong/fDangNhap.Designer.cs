@@ -33,15 +33,15 @@ namespace QuanLySanBong
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.ptbExit = new System.Windows.Forms.PictureBox();
             this.grbContent = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbTaiKhoan = new System.Windows.Forms.TextBox();
-            this.txbMatKhau = new System.Windows.Forms.TextBox();
-            this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.txbMatKhau = new System.Windows.Forms.TextBox();
+            this.txbTaiKhoan = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             this.grbContent.SuspendLayout();
@@ -81,6 +81,18 @@ namespace QuanLySanBong
             this.pnlTop.Size = new System.Drawing.Size(448, 35);
             this.pnlTop.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(13, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Đăng nhập hệ thống";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // ptbExit
             // 
             this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -108,27 +120,46 @@ namespace QuanLySanBong
             this.grbContent.TabIndex = 8;
             this.grbContent.TabStop = false;
             // 
-            // label1
+            // btnHuy
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(13, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Đăng nhập hệ thống";
+            this.btnHuy.BackColor = System.Drawing.SystemColors.Info;
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHuy.Location = new System.Drawing.Point(129, 190);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(85, 42);
+            this.btnHuy.TabIndex = 7;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // label2
+            // btnDangNhap
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(31, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tài khoản";
+            this.btnDangNhap.BackColor = System.Drawing.SystemColors.Info;
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDangNhap.Location = new System.Drawing.Point(236, 190);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(125, 42);
+            this.btnDangNhap.TabIndex = 6;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // txbMatKhau
+            // 
+            this.txbMatKhau.Location = new System.Drawing.Point(141, 118);
+            this.txbMatKhau.Name = "txbMatKhau";
+            this.txbMatKhau.Size = new System.Drawing.Size(220, 26);
+            this.txbMatKhau.TabIndex = 5;
+            this.txbMatKhau.UseSystemPasswordChar = true;
+            // 
+            // txbTaiKhoan
+            // 
+            this.txbTaiKhoan.Location = new System.Drawing.Point(141, 56);
+            this.txbTaiKhoan.Name = "txbTaiKhoan";
+            this.txbTaiKhoan.Size = new System.Drawing.Size(220, 26);
+            this.txbTaiKhoan.TabIndex = 4;
             // 
             // label3
             // 
@@ -141,46 +172,16 @@ namespace QuanLySanBong
             this.label3.TabIndex = 3;
             this.label3.Text = "Mật khẩu";
             // 
-            // txbTaiKhoan
+            // label2
             // 
-            this.txbTaiKhoan.Location = new System.Drawing.Point(138, 53);
-            this.txbTaiKhoan.Name = "txbTaiKhoan";
-            this.txbTaiKhoan.Size = new System.Drawing.Size(202, 26);
-            this.txbTaiKhoan.TabIndex = 4;
-            // 
-            // txbMatKhau
-            // 
-            this.txbMatKhau.Location = new System.Drawing.Point(138, 118);
-            this.txbMatKhau.Name = "txbMatKhau";
-            this.txbMatKhau.Size = new System.Drawing.Size(202, 26);
-            this.txbMatKhau.TabIndex = 5;
-            this.txbMatKhau.UseSystemPasswordChar = true;
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.BackColor = System.Drawing.SystemColors.Info;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDangNhap.Location = new System.Drawing.Point(172, 189);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(125, 42);
-            this.btnDangNhap.TabIndex = 6;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.SystemColors.Info;
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnHuy.Location = new System.Drawing.Point(303, 189);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(85, 42);
-            this.btnHuy.TabIndex = 7;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = false;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(31, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tài khoản";
             // 
             // fDangNhap
             // 

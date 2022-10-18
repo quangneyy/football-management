@@ -129,11 +129,11 @@ namespace QuanLySanBong
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Location = new System.Drawing.Point(348, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 19);
+            this.label2.Size = new System.Drawing.Size(192, 24);
             this.label2.TabIndex = 24;
             this.label2.Text = "Quản Lý Nhân Viên";
             // 

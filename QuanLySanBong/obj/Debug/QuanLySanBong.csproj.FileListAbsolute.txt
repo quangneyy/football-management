@@ -1,7 +1,6 @@
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe.config
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.exe
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\bin\Debug\QuanLySanBong.pdb
-C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.AssemblyReference.cache
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.Properties.Resources.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.GenerateResource.cache
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.CoreCompileInputs.cache
@@ -66,3 +65,4 @@ C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.f
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fOrder.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fMain.resources
 C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.fDangNhap.resources
+C:\Users\ACER\source\repos\QuanLySanBong\QuanLySanBong\obj\Debug\QuanLySanBong.csproj.AssemblyReference.cache

@@ -113,5 +113,10 @@ namespace QuanLySanBong
             var f = new fBanHang(); // khai báo form
             addForm(f);
         }
+
+        private void pnlTop_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ptbMaximize_Click(null, null);
+        }
     }
 }

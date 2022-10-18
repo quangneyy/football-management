@@ -29,38 +29,37 @@ namespace QuanLySanBong
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.tbcContent = new System.Windows.Forms.TabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fBanHang));
             this.pnlControl = new System.Windows.Forms.Panel();
             this.dgvDanhSachMatHang = new System.Windows.Forms.DataGridView();
             this.lblSanDangChon = new System.Windows.Forms.Label();
             this.panelOrder = new System.Windows.Forms.Panel();
+            this.dgvChiTietBanHang = new System.Windows.Forms.DataGridView();
             this.pnlThoiGian = new System.Windows.Forms.Panel();
+            this.btnBatDau = new System.Windows.Forms.Button();
             this.btnKetThuc = new System.Windows.Forms.Button();
             this.mtbKetThuc = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.mtbBatDau = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblChiTietSan = new System.Windows.Forms.Label();
-            this.timerDongHo = new System.Windows.Forms.Timer(this.components);
-            this.dgvChiTietBanHang = new System.Windows.Forms.DataGridView();
-            this.btnBatDau = new System.Windows.Forms.Button();
+            this.tbcBanHang = new System.Windows.Forms.TabControl();
+            this.tpBanHang = new System.Windows.Forms.TabPage();
+            this.tpLSGD = new System.Windows.Forms.TabPage();
+            this.tbcContent = new System.Windows.Forms.TabControl();
+            this.dgvLSGD = new System.Windows.Forms.DataGridView();
+            this.pdHoaDon = new System.Drawing.Printing.PrintDocument();
+            this.pddHoaDon = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachMatHang)).BeginInit();
             this.panelOrder.SuspendLayout();
-            this.pnlThoiGian.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBanHang)).BeginInit();
+            this.pnlThoiGian.SuspendLayout();
+            this.tbcBanHang.SuspendLayout();
+            this.tpBanHang.SuspendLayout();
+            this.tpLSGD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLSGD)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tbcContent
-            // 
-            this.tbcContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbcContent.Location = new System.Drawing.Point(0, 0);
-            this.tbcContent.Name = "tbcContent";
-            this.tbcContent.SelectedIndex = 0;
-            this.tbcContent.Size = new System.Drawing.Size(1028, 606);
-            this.tbcContent.TabIndex = 0;
-            this.tbcContent.SelectedIndexChanged += new System.EventHandler(this.tbcContent_SelectedIndexChanged);
             // 
             // pnlControl
             // 
@@ -116,6 +115,25 @@ namespace QuanLySanBong
             this.panelOrder.Size = new System.Drawing.Size(594, 165);
             this.panelOrder.TabIndex = 2;
             // 
+            // dgvChiTietBanHang
+            // 
+            this.dgvChiTietBanHang.AllowUserToAddRows = false;
+            this.dgvChiTietBanHang.AllowUserToDeleteRows = false;
+            this.dgvChiTietBanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvChiTietBanHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvChiTietBanHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChiTietBanHang.Location = new System.Drawing.Point(230, 34);
+            this.dgvChiTietBanHang.MultiSelect = false;
+            this.dgvChiTietBanHang.Name = "dgvChiTietBanHang";
+            this.dgvChiTietBanHang.ReadOnly = true;
+            this.dgvChiTietBanHang.RowHeadersWidth = 62;
+            this.dgvChiTietBanHang.RowTemplate.Height = 28;
+            this.dgvChiTietBanHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvChiTietBanHang.Size = new System.Drawing.Size(358, 111);
+            this.dgvChiTietBanHang.TabIndex = 5;
+            // 
             // pnlThoiGian
             // 
             this.pnlThoiGian.Controls.Add(this.btnBatDau);
@@ -129,6 +147,19 @@ namespace QuanLySanBong
             this.pnlThoiGian.Size = new System.Drawing.Size(221, 120);
             this.pnlThoiGian.TabIndex = 3;
             // 
+            // btnBatDau
+            // 
+            this.btnBatDau.BackColor = System.Drawing.SystemColors.Info;
+            this.btnBatDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBatDau.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBatDau.Location = new System.Drawing.Point(4, 76);
+            this.btnBatDau.Name = "btnBatDau";
+            this.btnBatDau.Size = new System.Drawing.Size(97, 38);
+            this.btnBatDau.TabIndex = 9;
+            this.btnBatDau.Text = "Bắt đầu";
+            this.btnBatDau.UseVisualStyleBackColor = false;
+            this.btnBatDau.Click += new System.EventHandler(this.btnBatDau_Click);
+            // 
             // btnKetThuc
             // 
             this.btnKetThuc.BackColor = System.Drawing.SystemColors.Info;
@@ -140,6 +171,7 @@ namespace QuanLySanBong
             this.btnKetThuc.TabIndex = 8;
             this.btnKetThuc.Text = "Kết thúc";
             this.btnKetThuc.UseVisualStyleBackColor = false;
+            this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // mtbKetThuc
             // 
@@ -163,6 +195,7 @@ namespace QuanLySanBong
             // 
             // mtbBatDau
             // 
+            this.mtbBatDau.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
             this.mtbBatDau.Location = new System.Drawing.Point(77, 12);
             this.mtbBatDau.Mask = "00/00/0000 90:00";
             this.mtbBatDau.Name = "mtbBatDau";
@@ -192,41 +225,78 @@ namespace QuanLySanBong
             this.lblChiTietSan.TabIndex = 1;
             this.lblChiTietSan.Text = "Danh Sách Mặt Hàng Sân Đã Sử Dụng";
             // 
-            // timerDongHo
+            // tbcBanHang
             // 
-            this.timerDongHo.Enabled = true;
-            this.timerDongHo.Tick += new System.EventHandler(this.timerDongHo_Tick);
+            this.tbcBanHang.Controls.Add(this.tpBanHang);
+            this.tbcBanHang.Controls.Add(this.tpLSGD);
+            this.tbcBanHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbcBanHang.Location = new System.Drawing.Point(0, 0);
+            this.tbcBanHang.Name = "tbcBanHang";
+            this.tbcBanHang.SelectedIndex = 0;
+            this.tbcBanHang.Size = new System.Drawing.Size(594, 441);
+            this.tbcBanHang.TabIndex = 3;
             // 
-            // dgvChiTietBanHang
+            // tpBanHang
             // 
-            this.dgvChiTietBanHang.AllowUserToAddRows = false;
-            this.dgvChiTietBanHang.AllowUserToDeleteRows = false;
-            this.dgvChiTietBanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvChiTietBanHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvChiTietBanHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChiTietBanHang.Location = new System.Drawing.Point(230, 34);
-            this.dgvChiTietBanHang.MultiSelect = false;
-            this.dgvChiTietBanHang.Name = "dgvChiTietBanHang";
-            this.dgvChiTietBanHang.ReadOnly = true;
-            this.dgvChiTietBanHang.RowHeadersWidth = 62;
-            this.dgvChiTietBanHang.RowTemplate.Height = 28;
-            this.dgvChiTietBanHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChiTietBanHang.Size = new System.Drawing.Size(358, 111);
-            this.dgvChiTietBanHang.TabIndex = 5;
+            this.tpBanHang.Controls.Add(this.tbcContent);
+            this.tpBanHang.Location = new System.Drawing.Point(4, 29);
+            this.tpBanHang.Name = "tpBanHang";
+            this.tpBanHang.Padding = new System.Windows.Forms.Padding(3);
+            this.tpBanHang.Size = new System.Drawing.Size(586, 408);
+            this.tpBanHang.TabIndex = 0;
+            this.tpBanHang.Text = "Bán hàng";
+            this.tpBanHang.UseVisualStyleBackColor = true;
             // 
-            // btnBatDau
+            // tpLSGD
             // 
-            this.btnBatDau.BackColor = System.Drawing.SystemColors.Info;
-            this.btnBatDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBatDau.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBatDau.Location = new System.Drawing.Point(4, 76);
-            this.btnBatDau.Name = "btnBatDau";
-            this.btnBatDau.Size = new System.Drawing.Size(97, 38);
-            this.btnBatDau.TabIndex = 9;
-            this.btnBatDau.Text = "Bắt đầu";
-            this.btnBatDau.UseVisualStyleBackColor = false;
+            this.tpLSGD.Controls.Add(this.dgvLSGD);
+            this.tpLSGD.Location = new System.Drawing.Point(4, 29);
+            this.tpLSGD.Name = "tpLSGD";
+            this.tpLSGD.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLSGD.Size = new System.Drawing.Size(586, 408);
+            this.tpLSGD.TabIndex = 1;
+            this.tpLSGD.Text = "Lịch sử giao dịch";
+            this.tpLSGD.UseVisualStyleBackColor = true;
+            // 
+            // tbcContent
+            // 
+            this.tbcContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbcContent.Location = new System.Drawing.Point(3, 3);
+            this.tbcContent.Name = "tbcContent";
+            this.tbcContent.SelectedIndex = 0;
+            this.tbcContent.Size = new System.Drawing.Size(580, 402);
+            this.tbcContent.TabIndex = 1;
+            this.tbcContent.SelectedIndexChanged += new System.EventHandler(this.tbcContent_SelectedIndexChanged);
+            // 
+            // dgvLSGD
+            // 
+            this.dgvLSGD.AllowUserToAddRows = false;
+            this.dgvLSGD.AllowUserToDeleteRows = false;
+            this.dgvLSGD.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvLSGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLSGD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLSGD.Location = new System.Drawing.Point(3, 3);
+            this.dgvLSGD.Name = "dgvLSGD";
+            this.dgvLSGD.ReadOnly = true;
+            this.dgvLSGD.RowHeadersWidth = 62;
+            this.dgvLSGD.RowTemplate.Height = 28;
+            this.dgvLSGD.Size = new System.Drawing.Size(580, 402);
+            this.dgvLSGD.TabIndex = 0;
+            this.dgvLSGD.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLSGD_CellDoubleClick);
+            // 
+            // pdHoaDon
+            // 
+            this.pdHoaDon.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.pdHoaDon_PrintPage);
+            // 
+            // pddHoaDon
+            // 
+            this.pddHoaDon.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.pddHoaDon.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.pddHoaDon.ClientSize = new System.Drawing.Size(400, 300);
+            this.pddHoaDon.Enabled = true;
+            this.pddHoaDon.Icon = ((System.Drawing.Icon)(resources.GetObject("pddHoaDon.Icon")));
+            this.pddHoaDon.Name = "pddHoaDon";
+            this.pddHoaDon.Visible = false;
             // 
             // fBanHang
             // 
@@ -234,9 +304,9 @@ namespace QuanLySanBong
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1028, 606);
+            this.Controls.Add(this.tbcBanHang);
             this.Controls.Add(this.panelOrder);
             this.Controls.Add(this.pnlControl);
-            this.Controls.Add(this.tbcContent);
             this.Name = "fBanHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "fBanHang";
@@ -245,16 +315,18 @@ namespace QuanLySanBong
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachMatHang)).EndInit();
             this.panelOrder.ResumeLayout(false);
             this.panelOrder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBanHang)).EndInit();
             this.pnlThoiGian.ResumeLayout(false);
             this.pnlThoiGian.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBanHang)).EndInit();
+            this.tbcBanHang.ResumeLayout(false);
+            this.tpBanHang.ResumeLayout(false);
+            this.tpLSGD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLSGD)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tbcContent;
         private System.Windows.Forms.Panel pnlControl;
         private System.Windows.Forms.Panel panelOrder;
         private System.Windows.Forms.Label lblSanDangChon;
@@ -266,8 +338,14 @@ namespace QuanLySanBong
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mtbBatDau;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer timerDongHo;
         private System.Windows.Forms.DataGridView dgvChiTietBanHang;
         private System.Windows.Forms.Button btnBatDau;
+        private System.Windows.Forms.TabControl tbcBanHang;
+        private System.Windows.Forms.TabPage tpBanHang;
+        private System.Windows.Forms.TabControl tbcContent;
+        private System.Windows.Forms.TabPage tpLSGD;
+        private System.Windows.Forms.DataGridView dgvLSGD;
+        private System.Drawing.Printing.PrintDocument pdHoaDon;
+        private System.Windows.Forms.PrintPreviewDialog pddHoaDon;
     }
 }
